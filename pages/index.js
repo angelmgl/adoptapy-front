@@ -6,7 +6,7 @@ export default function Home() {
     return(
         <>
             <CustomHead 
-                title="AdoptaPy"
+                title="AdoptaPy - Home"
                 description="Sitio web para adoptar animalitos en Paraguay"
                 keywords="Paraguay, perritos, gatitos, adoptar"
             />
