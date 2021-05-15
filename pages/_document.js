@@ -82,6 +82,7 @@ class MyDocument extends Document {
                         content="/static/ms-icon-144x144.png"
                     />
                     <meta name="theme-color" content="#ffffff"></meta>
+                    <link rel="stylesheet" href="/css/styles.css" />
                 </Head>
                 <body>
                     <Main />

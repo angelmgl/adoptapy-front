@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Oswald:wght@700&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    --primary-color: #48dbfb;
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 17px;
+    }
+}
+@media only screen and (min-width: 1144px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    font-family: "Oswald", serif;
+    text-align: center;
+}
+
+p,
+ul,
+ol,
+input,
+a,
+span {
+    font-family: "Mulish", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* UTILITIES */
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 480px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+/* HEADER */
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.logo {
+    height: 3rem;
+    cursor: pointer;
+}
+
+/* HOME */
+.page-cards {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.page-card {
+    width: 100%;
+    height: 250px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+
+.page-cards .page-card:nth-child(1) {
+    background-color: #1dd1a1;
+}
+
+.page-cards .page-card:nth-child(1):hover {
+    background-color: #1cc191;
+}
+
+.page-cards .page-card:nth-child(2) {
+    background-color: #feca57;
+}
+
+.page-cards .page-card:nth-child(2):hover {
+    background-color: #deba47;
+}
+
+.page-cards .page-card:nth-child(3) {
+    background-color: #ff9f43;
+}
+
+.page-cards .page-card:nth-child(3):hover {
+    background-color: #df8f33;
+}
+
+.page-cards .page-card:nth-child(4) {
+    background-color: #0abde3;
+}
+
+.page-cards .page-card:nth-child(4):hover {
+    background-color: #00add3;
+}
+
+
+/* FOOTER */
+footer {
+    height: 10vh;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.adoptapy-icon {
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+footer span {
+    font-weight: 700;
+    color: white;
+}
