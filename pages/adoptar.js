@@ -1,7 +1,8 @@
 import CustomHead from "../components/CustomHead";
 import Layout from "../components/Layout";
+import axios from "axios";
 
-export default function Adoptar() {
+export default function Adoptar({ data }) {
     return (
         <>
             <CustomHead
@@ -14,4 +15,15 @@ export default function Adoptar() {
             </Layout>
         </>
     );
+}
+
+export async function getServerSideProps() {
+    const res = await axios.get("https://adoptapy.herokuapp.com/api/adoptions");
+    const data = await res.data;
+    console.log(data);
+    return {
+        props: {
+            data
+        }
+    }
 }
