@@ -27,13 +27,13 @@ export default function Home() {
 
                 <div className="page-cards grid">
                     <div className="page-card">
-                        <Link href="adoptar">
+                        <Link href="/adoptar">
                             <a>Quiero adoptar animalitos.</a>
                         </Link>
                     </div>
 
                     <div className="page-card">
-                        <Link href="dar-en-adopcion">
+                        <Link href="/dar-en-adopcion">
                             <a>
                                 Tengo un animalito y quiero darlo en adopción.
                             </a>
@@ -41,13 +41,13 @@ export default function Home() {
                     </div>
 
                     <div className="page-card">
-                        <Link href="perdidos">
+                        <Link href="/perdidos">
                             <a>¡Ayuda! Perdí a mi mascota.</a>
                         </Link>
                     </div>
 
                     <div className="page-card">
-                        <Link href="encontrados">
+                        <Link href="/encontrados">
                             <a>Encontré una mascota perdida</a>
                         </Link>
                     </div>
