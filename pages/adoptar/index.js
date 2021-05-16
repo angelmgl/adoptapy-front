@@ -1,7 +1,7 @@
 import axios from "axios";
-import CustomHead from "../components/CustomHead";
-import Layout from "../components/Layout";
-import PetCard from "../components/PetCard";
+import CustomHead from "../../components/CustomHead";
+import Layout from "../../components/Layout";
+import PetCard from "../../components/PetCard";
 
 export default function Adoptar({ data }) {
     const pets = data.data.docs;
